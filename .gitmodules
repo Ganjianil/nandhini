@@ -1,2 +1,6 @@
 [submodule "Frontend/my-next-app"]
+<<<<<<< HEAD
+=======
+    path = Frontend/my-next-app
+>>>>>>> 0b4989509e67b5f96587c3211663278f4a395bb2
 	url = https://github.com/Ganjianil/nandhini.git

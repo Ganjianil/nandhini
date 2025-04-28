@@ -1,0 +1,324 @@
+/* Header Section */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8d7da; /* Light pink background */
+    height: 55px;
+    box-sizing: border-box;
+    z-index: 500; /* Lower than navbar to avoid overlap issues */
+}
+
+
+.header-contact {
+background-color: #343a40; /* Dark gray background */
+padding: 19px 50px;
+}
+
+.header-contact p {
+color: #ffffff; /* White text */
+margin: 0;
+}
+
+.header-title {
+flex-grow: 1;
+text-align: center;
+padding: 55;
+}
+
+.header-title p {
+color: #343a40; /* Dark gray text */
+margin: 10;
+}
+
+/* Main Section */
+.main-background {
+background-color: rgb(98, 96, 96); /* Dark gray */
+height: 650px;
+}
+
+
+.navbar {
+background-color: rgb(71, 71, 71);
+width: 100%;
+height: 80px;
+display: flex;
+justify-content: space-between;
+position: relative;
+padding: 15px;
+top: 0; /* Aligns it to the top of the viewport */
+z-index: 1000; /* Ensures it stays above other elements */
+box-sizing: border-box; /* Prevents padding from increasing width */
+}
+
+
+.navbar-list {
+display: flex;
+gap: 25px; /* Adjust spacing between menu items */
+color: #191717; /* Sets font color to white for list items */
+list-style: none; /* Removes bullet points from the list */
+margin: 0;
+padding: 0;
+}
+
+.navbar-list li {
+color: #f3f3f3; /* Ensures individual list items have white font */
+cursor: pointer; /* Adds a pointer cursor for interactive elements */
+}
+
+.navbar-list li:hover::after {
+content: ""; /* Empty content to create the underline */
+position: absolute;
+bottom: 0; /* Align underline at the bottom of the text */
+left: 0;
+width: 100%;
+height: 2px; /* Thickness of the underline */
+background-color: pink; /* Pink underline color */
+}
+
+
+.hero-content {
+flex: 1; /* Allows the text section to occupy equal space */
+padding-left: 150px;
+}
+
+.hero-content p {
+color: #ffffff; /* White text for better readability */
+font-size: 19px; /* Adjusts font size */
+line-height: 1.6; /* Provides spacing between lines for elegance */
+margin: 0;
+}
+
+.featured-image {
+flex: 1; /* Allows the image to occupy equal space */
+border-radius: 10px; /* Adds rounded corners for aesthetics */
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Creates a subtle shadow for depth */
+}
+
+.primary-button {
+position: relative;
+display: inline-block;
+width: 150px;
+height: 50px;
+background-color: transparent;
+color: #ffffff; /* White text */
+font-size: 16px;
+text-align: center;
+line-height: 50px; /* Vertically centers the text */
+font-family: "Arial", sans-serif;
+cursor: pointer;
+border: 2px solid pink; /* Outer box with pink border */
+transition: transform 0.3s ease;
+}
+
+.primary-button:hover {
+transform: translate(10px, 10px); /* Moves the box inward */
+}
+
+.centered-content {
+display: flex;
+justify-content: center;
+}
+
+/* About Section */
+.about-wrapper {
+padding: 50px 30px;
+text-align: center;
+}
+
+.about-header h1 {
+font-size: 2.0em;
+color: #181616;
+margin-bottom: 20px;
+letter-spacing: 1px;
+}
+
+.about-content {
+font-size: 1.2em;
+text-align: justify;
+line-height: 1.6;
+color: #262525;
+margin: 0 auto;
+max-width: 800px; /* Controls the text width for readability */
+}
+
+.contact-section {
+background-color: #343a40;
+height: 550px;
+padding: 50px;
+border-radius: 10px;
+}
+
+.contact-header h1 {
+font-size: 2.5rem;
+font-weight: bold;
+text-align: center;
+color: #f8d7da;
+margin-bottom: 30px;
+}
+
+.contact-content {
+display: flex;
+justify-content: space-between;
+gap: 30px;
+align-items: center;
+color: white;
+max-width: 1100px;
+margin: 0 auto;
+}
+
+.contact-content div {
+flex: 1;
+padding: 20px;
+}
+
+.contact-content p {
+font-size: 1.2rem;
+margin: 10px 0;
+font-weight: 300;
+}
+
+/* Google Maps */
+.embedded-map {
+width: 100%;
+height: 400px;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.hero-header{
+display: flex;
+padding: 75;
+background-color: grey
+}
+.navbar-user-section{
+display: flex;
+
+gap: 25px; /* Adjust spacing between menu items */
+color: #191717; /* Sets font color to white for list items */
+list-style: none; /* Removes bullet points from the list */
+margin: 0;
+padding: 0;
+}
+.navbar-user-section li{
+color: #f3f3f3;
+
+}
+.featured-title{
+display: flex;
+justify-content: center;
+}
+.main-content{
+background-color: #ffffff;
+}
+.footer-header{
+display: flex;
+justify-content: center;
+
+
+}
+.footer-details{
+display: flex;
+justify-content: space-between;
+padding: 50;
+}
+.footer-container{
+background-color: #77797a;
+}
+.footer-map{
+padding-right: 15px;
+
+}
+.embedded-map{
+height: 300;
+width: 600;
+}
+.hero-title{
+padding-left: 200px;
+padding-top: 50px;
+}
+/* Import a decorative font from Google Fonts */
+
+.logo {
+font-family: Georgia, 'Times New Roman', serif;
+font-size: 1 rem;
+font-weight: bold;
+color: transparent;
+background: linear-gradient(45deg, #d4a017, #b8860b, #e6c200);
+-webkit-background-clip: text;
+background-clip: text;
+text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+letter-spacing: 3px;
+position: relative;
+display: inline-flex;
+align-items: center;
+padding: 12px 24px;
+border: 3px solid #d4a017;
+border-radius: 20px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.logo:hover {
+transform: scale(1.1);
+box-shadow: 0 10px 25px rgba(216, 165, 23, 0.4);
+}
+
+.icon {
+font-size: 2.2rem;
+margin-right: 12px;
+color: #b8860b;
+animation: sparkle 1.2s infinite;
+}
+
+@keyframes sparkle {
+0%, 100% { opacity: 1; }
+50% { opacity: 0.4; }
+}
+@media (max-width: 768px) {
+.hamburger {
+    display: block; /* Show hamburger menu */
+}
+
+.navbar-list {
+    display: none; /* Hidden by default */
+}
+
+.navbar-list.active {
+    display: flex; /* Show when toggled */
+}
+
+.header-container {
+    flex-direction: column; /* Stack header elements */
+    height: auto;
+    padding: 10px;
+}
+
+.header-contact {
+    width: 100%;
+    text-align: center;
+}
+
+.header-title {
+    padding: 5px;
+}
+
+.hero-content {
+    padding: 15px;
+}
+
+.hero-title {
+    padding: 10px 0;
+}
+
+.about-wrapper {
+    padding: 20px 10px;
+}
+
+.contact-section {
+    padding: 20px 10px;
+}
+
+.footer-details {
+    padding: 15px;
+}
+}
+

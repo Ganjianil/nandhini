@@ -1,0 +1,159 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .card-price {
+    font-size: 16px;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #555;
+  }.card-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .edit-btn, .delete-btn, .buy-now, .add-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .edit-btn:hover, .buy-now:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .delete-btn:hover {
+    background-color: #b02a37;
+  }
+  
+  .add-cart {
+    background-color: #28a745;
+  }
+  
+  .add-cart:hover {
+    background-color: #1e7e34;
+  }.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }.admin-dashboard {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .delete-all-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .delete-all-btn:hover {
+    background-color: #b02a37;
+  }body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #007bff;
+  }
+  .buy-now, .add-cart {
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px; /* Space between buttons */
+  }
+  
